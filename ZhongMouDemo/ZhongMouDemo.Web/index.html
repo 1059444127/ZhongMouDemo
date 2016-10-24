@@ -1,12 +1,701 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body ng-app="app">
-    <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-animate.js"></script>
-    <script src="Scripts/angular-route.js"></script>
-    <script src="App/app.js"></script>
-</body>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<title>中牟县水务局远程综合管理系统</title>
+
+		<meta name="description" content="overview &amp; stats">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="/assets/ace/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/ace/css/font-awesome.min.css">
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="/assets/ace/css/ace-fonts.css">
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="/assets/ace/css/ace.min.css">
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="/assets/ace/css/ace-part2.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="/assets/ace/css/ace-skins.min.css">
+		<link rel="stylesheet" href="/assets/ace/css/ace-rtl.min.css">
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="/assets/ace/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		
+
+		
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		
+		<style type="text/css">
+			.loading-bj{
+				position:fixed;
+				z-index:2;
+				top:50%;
+				left:50%;
+			}
+		</style>
+	</head>
+
+	<body class="no-skin" ng-app="pageView">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default">
+			<div class="navbar-container" id="navbar-container">
+				<!-- #section:basics/sidebar.mobile.toggle -->
+				<button type="button" class="navbar-toggle menu-toggler pull-left display" id="menu-toggler">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- /section:basics/sidebar.mobile.toggle -->
+				<div class="navbar-header pull-left">
+					<!-- #section:basics/navbar.layout.brand -->
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							中牟县水务局远程综合管理系统
+						</small>
+					</a>
+
+					<!-- /section:basics/navbar.layout.brand -->
+
+					<!-- #section:basics/navbar.toggle -->
+
+					<!-- /section:basics/navbar.toggle -->
+				</div>
+
+				<!-- #section:basics/navbar.dropdown -->
+				
+
+				<!-- /section:basics/navbar.dropdown -->
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+			<!-- #section:basics/sidebar -->
+			<div id="sidebar" class="sidebar responsive">
+				<!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list" style="top: 0;">
+					<!--<li class="active">
+						<a href="index.html">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>-->
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text">
+								农田水利
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									狼城岗
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu nav-hide" style="display: none;">
+									<li class="">
+										<a href="#/ShangQing">
+											<i class="menu-icon fa fa-caret-right"></i>
+											墒情
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#/two-menu-1.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											气象
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#/two-menu-2.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											大棚
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#/mobile-menu-1.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											水井
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#/mobile-menu-2.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											控制
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#/mobile-menu-3.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											视频
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="#/typography.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									黄店
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									官渡
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 饮水安全 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 合到水源 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 防汛抗旱 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 水资源 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 水库湖泊 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="hsub">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 灌渠 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu nav-hide" style="display: none;">
+							<li class="">
+								<a href="#/profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Inbox
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Pricing Tables
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#/login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Login &amp; Register
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+
+				<!-- /section:basics/sidebar.layout.minimize -->
+			</div>
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<!-- #section:basics/content.breadcrumbs -->
+				<div class="page-content">
+					<div ng-view></div>
+					<div class="loading-bj">
+					    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+					    <span class="sr-only">Loading...</span>
+					</div>	
+				</div>
+				<!-- /section:basics/content.breadcrumbs -->
+				<!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=92qyvplqPQ7EPwz8ALCwVASSGGkDuXRG"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/assets/ace/js/jquery.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="/assets/ace/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='/assets/ace/js/jquery1x.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+<!--[if lte IE 8]>
+		<script src="/assets/ace/js/html5shiv.js"></script>
+		<script src="/assets/ace/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="/assets/ace/js/ace.min.js"></script>
+		
+	    <script src="/Scripts/angular.js"></script>
+	    <script src="/Scripts/angular-animate.min.js"></script>
+	    <script src="/Scripts/angular-route.min.js"></script>
+	    <script src="/js/index.js"></script>
+		
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='/assets/ace/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="/assets/ace/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="/js/bj-highcharts/highcharts.js"></script>-->
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="/assets/ace/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="/assets/ace/js/jquery-ui.custom.min.js"></script>
+		<script src="/assets/ace/js/jquery.ui.touch-punch.min.js"></script>
+		<!--<script src="/assets/ace/js/jquery.easypiechart.min.js"></script>
+		<script src="/assets/ace/js/jquery.sparkline.min.js"></script>
+		<script src="/assets/ace/js/flot/jquery.flot.min.js"></script>
+		<script src="/assets/ace/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="/assets/ace/js/flot/jquery.flot.resize.min.js"></script>-->
+
+		<!-- ace scripts -->
+		<script src="/assets/ace/js/ace-extra.min.js"></script>
+		<script src="/assets/ace/js/ace-elements.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+		<link rel="stylesheet" href="/assets/ace/css/ace.onpage-help.css">
+		<!--<link rel="stylesheet" href="/docs/assets/js/themes/sunburst.css">-->
+
+		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+		<script src="/assets/ace/js/ace/ace.onpage-help.js"></script>
+		<!--<script src="/docs/assets/js/rainbow.js"></script>
+		<script src="/docs/assets/js/language/generic.js"></script>
+		<script src="/docs/assets/js/language/html.js"></script>
+		<script src="/docs/assets/js/language/css.js"></script>
+		<script src="/docs/assets/js/language/javascript.js"></script>-->
+
+	</body>
 </html>
