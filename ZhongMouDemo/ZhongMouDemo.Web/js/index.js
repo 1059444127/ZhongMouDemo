@@ -4,13 +4,13 @@ var pageViewApp = angular.module('pageView', ['ngRoute', 'ngAnimate']);
 pageViewApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/RealTime/RealTime.html',
-            controller: 'realTimeController'
+            templateUrl: '/MainView/MainView.html',
+            //controller: 'realTimeController'
         })
-        .when('/RealTime', {
-            templateUrl: '/RealTime/RealTime.html',
-            controller: 'realTimeController'
-        })//ShangQing
+        //.when('/RealTime', {
+        //    templateUrl: '/RealTime/RealTime.html',
+        //    controller: 'realTimeController'
+        //})//ShangQing
         .when('/ShangQing', {
             templateUrl: '/ShangQing/ShangQing.html',
             //controller: 'shangQingController'

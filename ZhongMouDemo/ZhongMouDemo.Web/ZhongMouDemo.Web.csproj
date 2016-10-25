@@ -595,6 +595,8 @@
     <Content Include="assets\jqueryDataTables\jquery.dataTables.min.js" />
     <Content Include="assets\snap\snap.svg-min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="MainView\MainView.html" />
     <Content Include="ShangQing\bmap-m.css" />
     <Content Include="ShangQing\bmap-m.js" />
     <Content Include="HistoryData\hc-refresh-m.js" />
