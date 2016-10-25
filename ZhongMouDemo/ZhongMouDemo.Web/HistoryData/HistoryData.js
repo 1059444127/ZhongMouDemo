@@ -412,6 +412,25 @@ jQuery(document).ready(function($) {
                 }
             },
             series: hcSeries
-        });
+		 });
+
+		 var chart = $('#linechart').highcharts();
+		 for (var i = 2; i < chart.series.length; i++) {
+		     chart.series[i].hide();
+		 }
+
+	    setTimeout(shiftLines, 1000);
+
 	}
+
+
+
+	function shiftLines() {
+	    var chart = $('#linechart').highcharts();
+	    for (var i = 0; i < chart.series.length; i++) {
+	        chart.series[i].addPoint(Math.round(Math.random()*10000)/100, true, true);
+	    }
+
+	    setTimeout(shiftLines, 1000);
+    }
 }); //ready

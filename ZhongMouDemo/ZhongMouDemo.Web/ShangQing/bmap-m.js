@@ -14,18 +14,7 @@ jQuery(document).ready(function ($) {
 	//默认值  normal  可选  bluish  light  googlelite  grassgreen
 	var mapStyle = "light"; //mapStyleArr[~~(mapStyleArr.length*Math.random())];
 	var boundary = "中牟";
-    /*
-    113.921136,34.613278
- 113.946145,34.613635
-113.968279,34.604603
-113.980209,34.57655
-113.927604,34.581899
-113.902451,34.604721
-113.949738,34.637161
-113.943989,34.600562
-113.89699,34.573459
-113.932778,34.569654
-    */
+
 	var bmapData = [{
 	    lng: 113.921136,
 		lat: 34.613278,
@@ -38,7 +27,114 @@ jQuery(document).ready(function ($) {
 		"土湿4": Math.round(Math.random() * 100),
 		"土湿5": Math.round(Math.random() * 100),
 		"土湿6": Math.round(Math.random() * 100),
-		"土温1": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.921136,
+	    lat: 34.613278,
+	    label: "水源",
+	    title: "河范",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	    "土湿6": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.946145,
+	    lat: 34.613635,
+	    label: "水源",
+	    title: "前吕镇",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.968279,
+	    lat: 34.604603,
+	    label: "水源",
+	    title: "张堂村",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.980209,
+	    lat: 34.57655,
+	    label: "水源",
+	    title: "小庄",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	    "土湿6": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.927604,
+	    lat: 34.581899,
+	    label: "水源",
+	    title: "闫家",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.902451,
+	    lat: 34.604721,
+	    label: "水源",
+	    title: "高陈",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.949738,
+	    lat: 34.637161,
+	    label: "水源",
+	    title: "西岗",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	    "土湿6": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.943989,
+	    lat: 34.600562,
+	    label: "水源",
+	    title: "树头村",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.89699,
+	    lat: 34.573459,
+	    label: "水源",
+	    title: "黑牛张村",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
+	    "土湿4": Math.round(Math.random() * 100),
+	    "土湿5": Math.round(Math.random() * 100),
+	    "土湿6": Math.round(Math.random() * 100),
+	}, {
+	    lng: 113.932778,
+	    lat: 34.569654,
+	    label: "水源",
+	    title: "后王村",
+	    imgsrc: "/ShangQing/qiqiang2.jpg",
+	    "土湿1": Math.round(Math.random() * 100),
+	    "土湿2": Math.round(Math.random() * 100),
+	    "土湿3": Math.round(Math.random() * 100),
 	}, {
 	    lng: 113.946145,
 	    lat: 34.613635,
@@ -48,7 +144,8 @@ jQuery(document).ready(function ($) {
 		"土湿1": Math.round(Math.random() * 100),
 		"土湿2": Math.round(Math.random() * 100),
 		"土湿3": Math.round(Math.random() * 100),
-		"土温1": Math.round(Math.random() * 100),
+		"土湿4": Math.round(Math.random() * 100),
+		"土湿5": Math.round(Math.random() * 100),
 	}, {
 	    lng: 113.968279,
 	    lat: 34.604603,
@@ -58,7 +155,6 @@ jQuery(document).ready(function ($) {
 		"土湿1": Math.round(Math.random() * 100),
 		"土湿2": Math.round(Math.random() * 100),
 		"土湿3": Math.round(Math.random() * 100),
-		"土温1": Math.round(Math.random() * 100),
 	}];
 	map = new BMap.Map("map", {
 		enableHighResolution: true,
