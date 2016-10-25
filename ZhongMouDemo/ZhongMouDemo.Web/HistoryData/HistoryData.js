@@ -1,16 +1,19 @@
 ! function() {}(); //!
 jQuery.noConflict();
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
+
+    var counter = 0;
+    var dtNow = new Date();
 	"use strict";
 	var ajaxData = {
-		"Table": [{
-		    "土湿1": Math.round(Math.random()*10000)/100,
-		    "土湿2": Math.round(Math.random() * 10000) / 100,
-		    "土湿3": Math.round(Math.random()*10000)/100,
-		    "土湿4": Math.round(Math.random() * 10000) / 100,
-		    "土湿5": Math.round(Math.random()*10000)/100,
-		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-03",
+	    "Table": [{
+	        "土湿1": Math.round(Math.random() * 10000) / 100,
+	        "土湿2": Math.round(Math.random() * 10000) / 100,
+	        "土湿3": Math.round(Math.random() * 10000) / 100,
+	        "土湿4": Math.round(Math.random() * 10000) / 100,
+	        "土湿5": Math.round(Math.random() * 10000) / 100,
+	        "土湿6": Math.round(Math.random() * 10000) / 100,
+	        "日期": getDateString(dtNow, -21),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -18,7 +21,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-04",
+		    "日期": getDateString(dtNow, -20),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -26,7 +29,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-05",
+		    "日期": getDateString(dtNow, -19),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -34,7 +37,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-06",
+		    "日期": getDateString(dtNow, -18),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -42,7 +45,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-07",
+		    "日期": getDateString(dtNow, -17),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -50,7 +53,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-08",
+		    "日期": getDateString(dtNow, -16),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -58,7 +61,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-09",
+		    "日期": getDateString(dtNow, -15),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -66,7 +69,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-10",
+		    "日期": getDateString(dtNow, -14),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -74,7 +77,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-11",
+		    "日期": getDateString(dtNow, -13),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -82,7 +85,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-12",
+		    "日期": getDateString(dtNow, -12),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -90,7 +93,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-13",
+		    "日期": getDateString(dtNow, -11),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -98,7 +101,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-14",
+		    "日期": getDateString(dtNow, -10),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -106,7 +109,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-15",
+		    "日期": getDateString(dtNow, -9),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -114,7 +117,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-16",
+		    "日期": getDateString(dtNow, -8),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -122,7 +125,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-17",
+		    "日期": getDateString(dtNow, -7),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -130,7 +133,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-18",
+		    "日期": getDateString(dtNow, -6),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -138,7 +141,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-19",
+		    "日期": getDateString(dtNow, -5),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -146,7 +149,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-20",
+		    "日期": getDateString(dtNow, -4),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -154,7 +157,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-21",
+		    "日期": getDateString(dtNow, -3),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -162,7 +165,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-22",
+		    "日期": getDateString(dtNow, -2),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -170,7 +173,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-23",
+		    "日期": getDateString(dtNow, -1),
 		}, {
 		    "土湿1": Math.round(Math.random() * 10000) / 100,
 		    "土湿2": Math.round(Math.random() * 10000) / 100,
@@ -178,7 +181,7 @@ jQuery(document).ready(function($) {
 		    "土湿4": Math.round(Math.random() * 10000) / 100,
 		    "土湿5": Math.round(Math.random() * 10000) / 100,
 		    "土湿6": Math.round(Math.random() * 10000) / 100,
-			"日期": "2016-05-24",
+		    "日期": getDateString(dtNow,0),
 		}]
 	};
     
@@ -418,19 +421,30 @@ jQuery(document).ready(function($) {
 		 for (var i = 2; i < chart.series.length; i++) {
 		     chart.series[i].hide();
 		 }
-
+	    console.log(chart.series[0].data[0]);
 	    setTimeout(shiftLines, 1000);
 
 	}
 
 
+    function getDateString(dateBase,tSpan) {
+        var dt = new Date(dateBase);
+        dt.setDate(dt.getDate()+tSpan);
+        var year = dt.getFullYear().toString();
+        var month = (dt.getMonth() + 101).toString().substr(1, 2);
+        var day = (dt.getDate() + 100).toString().substr(1, 2);
+        return year + '-' + month + '-' + day;
+    }
 
-	function shiftLines() {
+
+    function shiftLines() {
+        counter++;
+        var dt = new Date();
 	    var chart = $('#linechart').highcharts();
 	    for (var i = 0; i < chart.series.length; i++) {
-	        chart.series[i].addPoint(Math.round(Math.random()*10000)/100, true, true);
+	        chart.series[i].addPoint([getDateString(dt, counter), Math.round(Math.random() * 10000) / 100 ], true, true);
 	    }
-
 	    setTimeout(shiftLines, 1000);
     }
 }); //ready
+
