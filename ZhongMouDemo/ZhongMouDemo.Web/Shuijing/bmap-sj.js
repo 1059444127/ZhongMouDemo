@@ -18,141 +18,141 @@ jQuery(document).ready(function ($) {
     var bmapData = [{
         lng: 113.921136,
         lat: 34.613278,
-        label: "墒情",
+        label: "水井",
         title: "河范",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
-        "土湿6": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
+        "水位6": Math.round(Math.random() * 100),
     }, {
         lng: 113.946145,
         lat: 34.613635,
-        label: "墒情",
+        label: "水井",
         title: "前吕镇",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
     }, {
         lng: 113.968279,
         lat: 34.604603,
-        label: "墒情",
+        label: "水井",
         title: "张堂村",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
     }, {
         lng: 113.980209,
         lat: 34.57655,
-        label: "墒情",
+        label: "水井",
         title: "小庄",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
-        "土湿6": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
+        "水位6": Math.round(Math.random() * 100),
     }, {
         lng: 113.927604,
         lat: 34.581899,
-        label: "墒情",
+        label: "水井",
         title: "闫家",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
     }, {
         lng: 113.902451,
         lat: 34.604721,
-        label: "墒情",
+        label: "水井",
         title: "高陈",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
     }, {
         lng: 113.949738,
         lat: 34.637161,
-        label: "墒情",
+        label: "水井",
         title: "西岗",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
-        "土湿6": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
+        "水位6": Math.round(Math.random() * 100),
     }, {
         lng: 113.943989,
         lat: 34.600562,
-        label: "墒情",
+        label: "水井",
         title: "树头村",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
     }, {
         lng: 113.89699,
         lat: 34.573459,
-        label: "墒情",
+        label: "水井",
         title: "黑牛张村",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
-        "土湿4": Math.round(Math.random() * 100),
-        "土湿5": Math.round(Math.random() * 100),
-        "土湿6": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
+        "水位4": Math.round(Math.random() * 100),
+        "水位5": Math.round(Math.random() * 100),
+        "水位6": Math.round(Math.random() * 100),
     }, {
         lng: 113.932778,
         lat: 34.569654,
-        label: "墒情",
+        label: "水井",
         title: "后王村",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
     }, {
         lng: 114.197339,
         lat: 34.875888,
-        label: "墒情",
+        label: "水井",
         title: "西狼村",
         imgsrc: "/Images/qiqiang2.jpg",
-        "土湿1": Math.round(Math.random() * 100),
-        "土湿2": Math.round(Math.random() * 100),
-        "土湿3": Math.round(Math.random() * 100),
+        "水位1": Math.round(Math.random() * 100),
+        "水位2": Math.round(Math.random() * 100),
+        "水位3": Math.round(Math.random() * 100),
     }
-, { lng: 114.163419, lat: 34.88187, label: "墒情", title: "北卫滩村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.14035, lat: 34.880567, label: "墒情", title: "斜庄", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.149621, lat: 34.873697, label: "墒情", title: "曹楼村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.150986, lat: 34.865167, label: "墒情", title: "雁鸣湖", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.177145, lat: 34.855215, label: "墒情", title: "唐街", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.195973, lat: 34.85563, label: "墒情", title: "后史庄村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.209843, lat: 34.8673, label: "墒情", title: "懂狼城岗村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.223713, lat: 34.860843, label: "墒情", title: "门八府", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.173911, lat: 34.846802, label: "墒情", title: "曹寨村 ", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.080275, lat: 34.730669, label: "墒情", title: "十里铺村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.094181, lat: 34.727762, label: "墒情", title: "邵岗村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.110387, lat: 34.724884, label: "墒情", title: "马庄桥村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.116818, lat: 34.736661, label: "墒情", title: "连天线", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.116818, lat: 34.736661, label: "墒情", title: "二十里铺村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.125262, lat: 34.744166, label: "墒情", title: "天王寺", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.098206, lat: 34.753272, label: "墒情", title: "下板峪村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.079485, lat: 34.753984, label: "墒情", title: "李庄村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.059435, lat: 34.753865, label: "墒情", title: "官渡桥村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.052823, lat: 34.745531, label: "墒情", title: "小孙庄村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
-, { lng: 114.052823, lat: 34.745531, label: "墒情", title: "前庄村", imgsrc: "/Images/qiqiang2.jpg", "土湿1": Math.round(Math.random() * 100), "土湿2": Math.round(Math.random() * 100), "土湿3": Math.round(Math.random() * 100), }
+, { lng: 114.163419, lat: 34.88187, label: "水井", title: "北卫滩村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.14035, lat: 34.880567, label: "水井", title: "斜庄", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.149621, lat: 34.873697, label: "水井", title: "曹楼村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.150986, lat: 34.865167, label: "水井", title: "雁鸣湖", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.177145, lat: 34.855215, label: "水井", title: "唐街", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.195973, lat: 34.85563, label: "水井", title: "后史庄村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.209843, lat: 34.8673, label: "水井", title: "懂狼城岗村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.223713, lat: 34.860843, label: "水井", title: "门八府", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.173911, lat: 34.846802, label: "水井", title: "曹寨村 ", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.080275, lat: 34.730669, label: "水井", title: "十里铺村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.094181, lat: 34.727762, label: "水井", title: "邵岗村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.110387, lat: 34.724884, label: "水井", title: "马庄桥村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.116818, lat: 34.736661, label: "水井", title: "连天线", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.116818, lat: 34.736661, label: "水井", title: "二十里铺村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.125262, lat: 34.744166, label: "水井", title: "天王寺", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.098206, lat: 34.753272, label: "水井", title: "下板峪村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.079485, lat: 34.753984, label: "水井", title: "李庄村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.059435, lat: 34.753865, label: "水井", title: "官渡桥村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.052823, lat: 34.745531, label: "水井", title: "小孙庄村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
+, { lng: 114.052823, lat: 34.745531, label: "水井", title: "前庄村", imgsrc: "/Images/qiqiang2.jpg", "水位1": Math.round(Math.random() * 100), "水位2": Math.round(Math.random() * 100), "水位3": Math.round(Math.random() * 100), }
     ];
     map = new BMap.Map("map", {
         enableHighResolution: true,
@@ -334,7 +334,7 @@ jQuery(document).ready(function ($) {
     }
 
     function addSearchInfoWindow(m, aObj, i) {
-        var sTitle = ['					<a class="h3" style=\'margin:0 0 0 0;padding:0.2em 0\' href="#/HistoryData">',
+        var sTitle = ['					<a class="h3" style=\'margin:0 0 0 0;padding:0.2em 0\' href="#/HistoryDataSJ">',
 			aObj.title,
 			' </a> '
         ].join("");

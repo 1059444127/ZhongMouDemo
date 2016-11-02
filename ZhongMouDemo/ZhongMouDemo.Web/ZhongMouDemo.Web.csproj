@@ -587,6 +587,11 @@
     <Content Include="assets\bootstrap\css\bootstrap.css" />
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\jqueryDataTables\dataTables.bootstrap.min.js" />
+    <Content Include="DaPeng\DaPeng.css" />
+    <Content Include="DaPeng\DaPeng.html" />
+    <Content Include="DaPeng\DaPeng.js" />
+    <Content Include="DaPeng\QpMap.css" />
+    <Content Include="DaPeng\QpMap.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\bootstrap\js\bootstrap.js" />
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
@@ -595,8 +600,19 @@
     <Content Include="assets\jqueryDataTables\jquery.dataTables.min.js" />
     <Content Include="assets\snap\snap.svg-min.js" />
     <Content Include="Global.asax" />
+    <Content Include="HistoryDataDP\HistoryDataDP.css" />
+    <Content Include="HistoryDataDP\HistoryDataDP.html" />
+    <Content Include="HistoryDataDP\HistoryDataDP.js" />
+    <Content Include="HistoryDataQX\HistoryDataQX.css" />
+    <Content Include="HistoryDataQX\HistoryDataQX.html" />
+    <Content Include="HistoryDataQX\HistoryDataQX.js" />
+    <Content Include="HistoryDataSJ\HistoryDataSJ.css" />
+    <Content Include="HistoryDataSJ\HistoryDataSJ.html" />
+    <Content Include="HistoryDataSJ\HistoryDataSJ.js" />
     <Content Include="Images\background.jpg" />
     <Content Include="MainView\MainView.html" />
+    <Content Include="QiXiang\QxMap.css" />
+    <Content Include="QiXiang\QxMap.js" />
     <Content Include="ShangQing\bmap-m.css" />
     <Content Include="ShangQing\bmap-m.js" />
     <Content Include="HistoryData\hc-refresh-m.js" />
@@ -639,6 +655,9 @@
     <Content Include="Images\Pic\Wind_Flag_Storm.png" />
     <Content Include="index.html" />
     <Content Include="js\index.js" />
+    <Content Include="QiXiang\QiXiang.css" />
+    <Content Include="QiXiang\QiXiang.html" />
+    <Content Include="QiXiang\QiXiang.js" />
     <Content Include="RealTime\RealTime--20161019正常--为了添加load.html" />
     <Content Include="RealTime\realtime-m.css" />
     <Content Include="RealTime\realtime-m.js" />
@@ -650,11 +669,15 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="ShangQing\qiqiang2.jpg" />
+    <Content Include="Images\qiqiang2.jpg" />
     <Content Include="ShangQing\ShangQing.html" />
     <Content Include="ShangQing\ShangQing.css" />
     <Content Include="ShangQing\ShangQing.js" />
-    <Content Include="ShangQing\track_map_icon.png" />
+    <Content Include="Images\track_map_icon.png" />
+    <Content Include="Shuijing\bmap-m.css" />
+    <Content Include="Shuijing\bmap-sj.js" />
+    <Content Include="Shuijing\Shuijing.css" />
+    <Content Include="Shuijing\Shuijing.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -783,6 +806,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Contents\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

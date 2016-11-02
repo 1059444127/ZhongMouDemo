@@ -1,0 +1,39 @@
+﻿#bmap{
+	
+	height:354px;
+}
+.anchorBL span{display:none}
+.anchorBL img{display:none}
+.BMap_cpyCtrl{display: none;}
+div[title="显示三维地图"]{display: none;}
+
+/*searchInfoWindow*/
+.BMapLib_nav{
+	display:none;
+}
+.BMapLib_sendToPhone{
+	display:none;
+}
+.BMapLib_SearchInfoWindow {
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(51, 14, 255, 0.4);
+}
+.BMapLib_SearchInfoWindow .BMapLib_bubble_title {
+    border: none !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+.BMapLib_bubble_top{
+	    border-bottom: 2px dashed #ddd !important;
+}
+.BMapLib_bubble_title{
+	color:green;
+}
+.BMapLib_bubble_center .t{
+	color:blue;
+}
+.BMapLib_bubble_bottom{
+	display:none;
+}

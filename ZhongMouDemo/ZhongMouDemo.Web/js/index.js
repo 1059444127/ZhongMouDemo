@@ -7,17 +7,37 @@ pageViewApp.config(function($routeProvider) {
             templateUrl: '/MainView/MainView.html',
             //controller: 'realTimeController'
         })
-        //.when('/RealTime', {
-        //    templateUrl: '/RealTime/RealTime.html',
-        //    controller: 'realTimeController'
-        //})//ShangQing
+        .when('/DaPeng', {
+            templateUrl: '/DaPeng/DaPeng.html',
+            //controller: 'shangQingController'
+        })
         .when('/ShangQing', {
             templateUrl: '/ShangQing/ShangQing.html',
+            //controller: 'shangQingController'
+        })
+        .when('/QiXiang', {
+            templateUrl: '/QiXiang/QiXiang.html',
+            //controller: 'shangQingController'
+        })
+        .when('/ShuiJing', {
+            templateUrl: '/ShuiJing/ShuiJing.html',
             //controller: 'shangQingController'
         })
         .when('/HistoryData', {
             templateUrl: '/HistoryData/HistoryData.html',
             controller: 'historyDataController'
+        })
+        .when('/HistoryDataDP', {
+            templateUrl: '/HistoryDataDP/HistoryDataDP.html',
+           // controller: 'historyDataController'
+        })
+        .when('/HistoryDataQX', {
+            templateUrl: '/HistoryDataQX/HistoryDataQX.html',
+            // controller: 'historyDataController'
+        })
+        .when('/HistoryDataSJ', {
+            templateUrl: '/HistoryDataSJ/HistoryDataSJ.html',
+            // controller: 'historyDataController'
         });
 
 
